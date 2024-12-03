@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="description" content="Reproductor de musica/audio, MediaSongs.com">
+	<meta name="keywords" content="mediasongs, feid, duki, bad bunny">
+	<meta property="og:title" content="MediaSongs.com">
+	<meta property="og:description" content="MediaSongs es un reproductor web donde encontraras Singles, Artistas y ALbumnes de tus cantantes favoritos">
+	<meta property="og:image" content="/img/mediasong-portada.jpg">
+	<meta property="og:type" content="website">
+	<link rel="icon" type="image/jpg" href="/img/Spotify-icono.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <title>MediaSongs</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+            <h1>MediaSongs</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./premium/premium.html">Premium</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!--los onclick tienen que ir en las cards, cambiar a este orden singles-artistas-albums, eliminar los botones seguir de las cards de los artistas(mor no le temas), terminar la seccion player-->
+
+        <section id="feed" class="feed">
+
+            <h2>Singles</h2>
+
+            <section id="singles">
+                <div class="container-cards singles">
+                    <article  class="cards">
+                        <img src="./img/mor.jpg" alt="#">
+                        <div class="separador">
+                            <h3 class="name-cards">MOR, No Le Temas a la oscuridad</h3>
+                            <h3 class="name-artist">Feid</h3>
+                        </div> 
+                    </article>
+                </div>
+            </section>
+
+            <h2>Artistas</h2>
+
+            <section id="artists">
+                <div class="container-cards">
+                    <article class="cards cards-artist">
+                        <img src="./img/feid.jpg" alt="Feid">
+                        <h3 class="name-artist">Feid</h3>
+                        <button class="button-follow">Seguir</button> 
+                    </article>
+                    <article class="cards">
+                        <img src="./img/duki.jpg" alt="Duki">
+                        <h3 class="name-artist">Duki</h3>
+                        <button class="button-follow">Seguir</button> 
+                    </article>
+                    <article class="cards">
+                        <img src="./img/ncs.jpg" alt="NCS">
+                        <h3 class="name-artist">NCS</h3>
+                        <button class="button-follow">Seguir</button> 
+                    </article>
+                    
+                    
+                    <article class="cards">
+                        <img src="https://i.scdn.co/image/ab67616100005174df440f19484adb0a0903704f" alt="KHEA">
+                        <h3 class="name-artist">KHEA</h3>
+                        <button class="button-follow">Seguir</button> 
+                    </article> 
+                </div>
+            </section>
+
+        </section>
+
+        <section id="player" class="player">
+            <div class="reproductor">
+                
+                <img src="./img/mejor no nos vemos.jpg" alt="Feid">
+
+                <div class="artist-name-reproducotr">
+                    <h3 class="name-song">Mejor No Nos Vemos</h3>
+                    <h3 class="name-artist">Rels B</h3>
+                </div>
+            </div>
+            <div class="botones-reproductor">
+                <button id="playPauseBtn" aria-label="Reproducir"><i class='bx bx-play icon-play-pause'></i></button>
+            </div>
+
+        </section>
+
+        
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
