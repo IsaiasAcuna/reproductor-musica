@@ -35,8 +35,8 @@ const songs = [
   { 
     nombre: "She Got Me Like", 
     artista: "NCS", 
-    ruta: "SHE GOT ME LIKE.mp3", 
-    img_src: "./img/she got me like.jpg",
+    ruta: "SHE-GOT-ME-LIKE.mp3", 
+    img_src: "./img/SHE GOT ME LIKE.jpg",
     color:"#275182",
   },
   { 
